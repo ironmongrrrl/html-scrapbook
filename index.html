@@ -13,6 +13,7 @@
     <menu><header>I'm a flashy header</header></menu>
     <progress>Progress loading</progress>
 </head>
+
 <main><h1>This page is largely about HTML elements. I'm using a main tag here.</h1></main>
 <nav>This is a major navigation block, so I'm using a Nav.</nav>
 <body>
@@ -33,9 +34,6 @@
             <td>So so garish!</td> 
         </tr> 
     </table>
-
-    
-    
     <br>
 
     <article><h2>This is an article (within a section) about my coding ability. This article makes sense on its own.</h2><br>
@@ -54,21 +52,17 @@
 </section>
     
     <aside><h3>This is an aside</h3>
-        <br>In this aside we will list the H tags<br>
+        <br>In this aside we will list the H tags. Can you count to 6?<br>
             <h1>I am an h1</h1>
-
             <h2>I am an h2</h2>
-
             <h3>I am an h3</h3>
-
             <h4>I am an h4</h4>
-
             <h5>I am an h5</h5>
-
             <h6>I am an h6</h6>
-
+            <h6>Cool that was fun.</h6>
     </aside>
-    <section> Back into a section. Below I'm gonna list:<br>
+
+<section> Back into a section. Below I'm gonna list:<br>
     <ul>
         <li>Things in an unordered list (bulletpoints)</li>
         <li>These use li for list</li>
@@ -76,18 +70,50 @@
 <ol>
     <li>Now we're into ordered lists that use numbers</li>
     <li>Still use li of course</li>
-</ol></section>
-   
+</ol>
+</section>
 
+<aside style="background-image: url('https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-2060x1288.jpg');">
+<h1 style="color:whitesmoke">We are now entering space. Please pay attention.</h1>
+</aside>
 <article>
-    <h1>All systems are go</h1>
- Find and press the emergency button to fire the space shuttle<br>
- <img src="spacestation.jpg" usemap="#image-map">
+    <h1>All systems are go!</h1>
+    Find and press the emergency button to fire the space shuttle.<br>
+    <code>Clue: you're looking for a small round button.</code><br>
+    A <span style="color: grey">grey button</span> to be precise, with a <span style="color:red">red outer.</span><br>
+    <br>
+    <br>
+Before you press the button we will require you to fill out this short form to check you are safe to fly in space.<br>
+       <form action="form.html" method="POST">
+             <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="user_email">
+              <br>
+              <label for="message">Message:</label>
+              <textarea id="message" name="user_message" placeholder="e.g. for loved ones you will never see again"></textarea>
+              <br>
+              Do you have a GSOH?
+                <label for="humour yes">
+                <input id="humour yes" type="radio" name="user_humour" checked>Yes
+                </label>
+                <label for="humour no">
+                    <input id="humour no" type="radio" name="user_humour">No
+                    </label>
+          </form>
 
- <map name="image-map">
-     <area target="_self" alt="emergency" title="emergency" href="space.html" coords="740,157,762,131" shape="rect">
- </map>
 
+
+       </form>
+
+
+<figure><img src="spacestation.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_self" alt="emergency" title="emergency" href="space.html" coords="740,157,762,131" shape="rect">
+        </map>
+        <figcaption>Here's a caption for this image using figcaption.</figcaption>
+    </figure>
 </article>
 
 <footer>I'm a boring ass footer. Thanks for reading.</footer>
